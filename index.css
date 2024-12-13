@@ -1,0 +1,284 @@
+    /* General */
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        overflow-x: hidden;        
+        max-width: 100%; /* Asegura que el body ocupe todo el ancho */
+    }
+
+    h1 {
+        text-align: center; /* Centra el texto */
+        color: rgb(7, 4, 26); /* Color del texto rojo */
+        font-weight: bold; /* Hace el texto grueso */
+        font-size: 2em; /* Esto hace que el texto sea 2 veces más grande que el tamaño base */
+
+    }
+
+     
+/* Asegura que el contenedor de la galería ocupe todo el ancho */
+.gallery {
+    width: 100%;  /* Hace que ocupe todo el ancho disponible */
+    max-width: 100%; /* Elimina cualquier restricción de ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Espaciado interno si es necesario */
+}
+
+/* El contenedor para las imágenes cambiantes */
+.gallery-slider {
+    width: 100%;  /* Hace que ocupe todo el ancho disponible */
+    height: 250px; /* Ajusta la altura que deseas */
+    overflow: hidden; /* No muestra barras de desplazamiento */
+    position: relative; /* Permite la transición de imágenes */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilo para las imágenes dentro del slider */
+.gallery-slider img {
+    width: 100%;  /* Las imágenes ocuparán todo el ancho disponible */
+    height: 100%; /* Las imágenes cubrirán toda la altura del contenedor */
+    object-fit: cover; /* Las imágenes se ajustan para cubrir el contenedor sin distorsionarse */
+    transition: opacity 0.5s ease-in-out; /* Efecto de transición suave */
+}
+
+
+    .logo {
+        margin-left: 40px;
+    }
+    /* Encabezado */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #21303a;
+        color: white;
+    }
+
+    .header .nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+    /* Banner */
+    .banner {
+        text-align: center;
+        background: url('banner.jpg') no-repeat center center/cover;
+        color: white;
+    }
+
+    .banner-buttons .btn {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        background: #080325;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    /* Servicios */
+    .services {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .service-cards {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .service-card {
+        background: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    /* Galería */
+    .gallery {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .gallery-slider img {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+    }
+
+    /* Contacto */
+    .contact {
+        padding: 20px;
+        background: #333;
+        color: white;
+        text-align: center;
+    }
+
+    .contact .btn {
+        background: #00c853;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 10px;
+        text-align: center;
+        background: #007acc;
+        color: white;
+    }
+/* Servicios */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f9f9f9; /* Fondo claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services:hover {
+    transform: scale(1.05); /* Hace que la sección crezca ligeramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.service-card {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más grande */
+}
+
+.service-card h3 {
+    color: #21303a;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Galería */
+.gallery {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-slider img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-slider img:hover {
+    transform: scale(1.1); /* Hace la imagen más grande al pasar el ratón */
+}
+
+/* Contacto */
+.contact {
+    padding: 40px 20px;
+    background: #333;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact .btn {
+    background: #00c853;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact .btn:hover {
+    background: #008e1c; /* Cambio de color */
+    transform: translateY(-5px); /* Efecto de elevar el botón */
+}
+/* Barra de navegación */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #21303a;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 8px 12px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.header .nav a:hover {
+    color: #00c853; /* Cambio de color en hover */
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente al pasar el ratón */
+    text-decoration: underline; /* Subrayado elegante */
+}
+
+.header .nav a:active {
+    color: #008e1c; /* Color al hacer clic */
+}
+/* Estilo para los botones */
+.banner-buttons .btn,
+.contact .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #080325;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+.banner-buttons .btn:hover,
+.contact .btn:hover {
+    background: #00c853; /* Cambio de color a verde en hover */
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+}
+
+.banner-buttons .btn:active,
+.contact .btn:active {
+    background: #008e1c; /* Cambio de color al hacer clic */
+}
